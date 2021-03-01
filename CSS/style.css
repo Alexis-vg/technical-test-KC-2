@@ -359,6 +359,7 @@ main {
   display: flex;
   align-items: center;
   overflow-x: scroll;
+  margin: 15px 0;
 }
 .main-grid-analytics-and-badges .grid-analytics .gains-per-months-all {
   display: flex;
