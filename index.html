@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</head>
+<body>
+    <section class="main-grid">
+        <aside class="sidebar">
+            <span class="menu-logo"></span>
+            <span class="prendo-logo">Prendo</span>
+            <div class="menu-options">
+                <button class="sidebar-btn"> <span class="first-btn-logo btn-logo"></span> Vista General</button>
+                <button class="sidebar-btn"> <span class="second-btn-logo btn-logo"></span>Programas y Cursos</button>
+                <button class="sidebar-btn"> <span class="third-btn-logo btn-logo"></span>Diseña tu sitio</button>
+                <button class="sidebar-btn"> <span class="fourth-btn-logo btn-logo"></span>Estudiantes / Clientes</button>
+                <button class="sidebar-btn"> <span class="fifth-btn-logo btn-logo"></span>Marketing y ventas</button>
+                <button class="sidebar-btn"> <span class="sixth-btn-logo btn-logo"></span>Analítica y reporte</button>
+            </div>
+            <button class="settings-btn"><span class="config-btn-logo"></span> Configuración</button>
+        </aside>
+        <main>
+            <header>
+                <nav>
+                    <ul class="navbar">
+                        <li class="search-bar">
+                            <input type="text" placeholder="Buscar...">
+                            <span class="search-logo"></span>
+                        </li>
+                        <div class="profile-status">
+                            <li class="help-logo"></li>
+                            <li class="notification-logo"></li>
+                            <li class="messages-logo"></li>
+                            <li>
+                                <img src="assets/icons/profile.png" alt="">
+                                <span>Liliana Mora <span class="arrow-icon"></span> </span>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            <section class="main-content">
+                <div class="right-and-left">
+                    <div class="left-content">
+                        <p class="left-content__paragraph">¡Hola Liliana, así van tus programas!</p>
+                        <h1 class="left-content__title">Vista General</h1>
+                    </div>
+                    <div class="right-content">
+                        <span class="right-content__img"></span>
+                        <div class="right-content__info">
+                            <p>Curso de fotografía de alimentos</p>
+                            <p>Calificar actividad del módulo 2</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="table">
+                    <p class="table__row">
+                        <span class="table__row--numbers">08</span>
+                        <span>Cursos</span>
+                        <span>activos</span>
+                    </p>
+                    <p class="table__row">
+                        <span class="table__row--numbers">123</span>
+                        <span>Nuevas</span>
+                        <span>Oportunidades</span> 
+                    </p>
+                    <p class="table__row">
+                        <span class="table__row--numbers">45</span>
+                        <span>Estudiantes</span>
+                        <span>registrados</span>
+                    </p>
+                    <p class="table__row">
+                        <span class="table__row--numbers">20</span>
+                        <span>Certificados</span>
+                        <span>entregados</span> 
+                    </p>
+                    <p class="your-students">
+                        <span>Tus Estudiantes</span>
+                        <picture class="img-container">
+                            <source media="(min-width:768px)" srcset="assets/images/Component 53 – 1.png" />
+                            <img class="img-container__img" src="assets/images/Component 53 – 1@2x.png" alt="image" />
+                        </picture>
+                        <span class="border-tweak"></span>
+                    </p>
+                </div>
+                <section class="main-grid-analytics-and-badges">
+                    <div class="grid-analytics">
+                        <div class = "reported-gains">
+                            <h4 class = "reported-gains__title">Ganancias reportadas:</h4>
+                            <button class = "reported-gains__lapse-btn">Ultimos 6 meses <span class="arrow-down"></span></button>
+                        </div>
+                        <div class="total-gains">
+                            <div class="total-gains__numbers">
+                                <span class="total-gains__numbers--price">$ 5863</span>
+                                <span>Ganancias Totales</span>  
+                            </div>
+                            <div class="total-gains__table">
+                                <canvas width= "600px" height= "300px" id="myChart"></canvas>
+                            </div>
+                        </div>
+                        <section class="gains-per-month">
+                            <div class="gains-per-month__month1 gains-per-months-all">
+                                <p>Enero</p>
+                                <p>$352.96</p>
+                                
+                            </div>
+                            <div class="gains-per-month__month2 gains-per-months-all">
+                                <p>Febrero</p>
+                                <p>$508.56</p>
+                                
+                            </div>
+                            <div class="gains-per-month__month3 gains-per-months-all">
+                                <p>Marzo</p>
+                                <p>$442.56</p>
+                                
+                            </div>
+                            <div class="gains-per-month__month4 gains-per-months-all">
+                                <p>Abril</p>
+                                <p>$482.56</p>
+                            </div>
+                            <div class="gains-per-month__month5 gains-per-months-all">
+                                <p>Mayo</p>
+                                <p>$447.56</p>
+                            </div>
+                            <div class="gains-per-month__month6 gains-per-months-all">
+                                <p>Junio</p>
+                                <p>$845.55</p>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <div class="your-badges">
+                        <div class="your-badges__courses your-badges-all">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="assets/images/Image 171.png" />
+                                <img class="your-badges__courses--img1" src="assets/images/Image 171@2x.png"></img>
+                            </picture>
+                            <span class="your-badges__courses--description">Tus cursos</span>  
+                        </div>
+                        <div class="your-badges__sites your-badges-all">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="assets/images/Image 153.png" />
+                                <img src="assets/images/Image 153@2x.png" class="your-badges__sites--img2"></img>
+                            </picture>
+                            <span class="your-badges__sites--description">Personaliza tus sitios</span>
+                        </div>
+                        <div class="your-badges__campain your-badges-all">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="assets/images/Image 155.png" />
+                                <img src="assets/images/Image 155@2x.png" class="your-badges__campain--img3"></img>
+                            </picture>
+                            <span class="your-badges__campain--description">Crea una campaña</span>
+                        </div>
+                        <div class="your-badges__customers your-badges-all">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="assets/images/muneca.png" />
+                                <img src="assets/images/muneca@2x.png" class="your-badges__customers--img4"></img>
+                            </picture>
+                            <span class="your-badges__customers--description">Conoce tus clientes</span>
+                        </div>
+                    </div>
+
+                </section>
+                <div class="final-section">
+                    <h1 class="final-section__title">Conoce como crear...</h1>
+                    <div class="final-section__content">
+                        <img src="assets/images/Group 3191@2x.png" alt="">
+                        <div class="final-section__content--left">
+                            <h4>Embudos de conversión</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                            <button>Inicia ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+    <script>
+    const API_URL =
+  "https://api.covid19api.com/live/country/south-africa/status/confirmed/date/2020-03-21T13:13:30Z";
+fetch(`${API_URL}`)
+  .then((response) => response.json())
+  .then((responseJson) => {
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var myChart = new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: responseJson.map((item => new Intl.DateTimeFormat('es-MX', { month: 'long', day: 'numeric' }).format(new Date(item.Date)))).slice(8,14),
+        datasets: [
+          {
+            label: "Ganancias Reportadas",
+            data: responseJson.map((item) => item.Confirmed),
+            backgroundColor: [
+            "#7583DE",
+              "#AEDDEB",
+              "#7583DE",
+              "#AEDDEB",
+              "#7583DE",
+              "#AEDDEB",
+            ],
+            borderColor: [
+            "#7583DE",
+              "#AEDDEB",
+              "#7583DE",
+              "#AEDDEB",
+              "#7583DE",
+              "#AEDDEB",
+            ],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
+      },
+    });
+  });</script>
+</body>
+</html>
